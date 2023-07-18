@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+
+/* shared styles */
+body{
+  margin: 20px 120px 20px;
+}
+
+/* Nav bar style start */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.nav-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-title{
+  color: #0B0223;
+font-family: Work Sans;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.nav-letter{
+  color: #FF42A5;
+}
+
+.nav-right{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  gap: 15px;
+
+
+  color: #3C354F;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+div a{
+  text-decoration: none;
+}
+.follow-btn{
+  border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+width: 262px;
+height: 40px;
+border: none;
+}
+button> i{
+  color: red;
+  margin-left: 5px;
+}
+
+/* navbar style end */
+
+/* banner section start */
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-title{
+
+  color: #0B0223;
+text-align: center;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+.banner-title-letter{
+ 
+text-align: center;
+font-family: Work Sans;
+font-size: 95px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;           
+}
+div > p{
+  color: #534C64;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+.sign-in-btn{
+  color: white;
+padding: 21px 40px;
+border: none;
+border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+
+
+/* Responsive section */
+/* Mobile view */
+@media screen and (max-width:576px) {
+  
+  body{
+    margin: 10px 100px 10px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .nav-right{
+    flex-direction: column;
+  }
+  
+}
+
+
+
+/* Tablet view */
+@media screen and (min-width:577px ) and (max-width:992px) {
+
+  body{
+    margin: 20px 100px 10px;
+  }
+  
+  nav{
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+  .nav-right{
+    flex-direction: column;
+  }
+}
