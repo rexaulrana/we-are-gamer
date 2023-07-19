@@ -7,12 +7,31 @@
 
 /* shared styles */
 body {
-  margin: 20px 120px 20px;
+  /* margin: 20px 120px 20px; */
+
 }
 .pink-letter {
   color: #ff42a5;
 }
 
+.title {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.gray-light-text {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 
 
 /* Nav bar style start */
@@ -21,6 +40,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  margin: 20px 120px 20px;
 }
 
 .nav-left {
@@ -30,14 +50,8 @@ nav {
   gap: 5px;
 }
 
-.nav-title {
-  color: #0b0223;
-  font-family: Work Sans;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+
+
 .pink-letter {
   color: #ff42a5;
 }
@@ -59,6 +73,14 @@ nav {
 
 div a {
   text-decoration: none;
+  margin-left: 15px;
+ 
+
+ 
+}
+
+.red-a{
+  color: red;
 }
 .follow-btn {
   border-radius: 8px;
@@ -81,6 +103,7 @@ button > i {
   align-items: center;
 
   margin-top: 20px;
+  margin: 20px 120px 20px;
 }
 .banner-title {
   color: #0b0223;
@@ -104,15 +127,7 @@ button > i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.gray-light-text {
-  color: #534c64;
-  font-family: Work Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+
 
 .sign-in-btn {
   color: white;
@@ -139,12 +154,18 @@ button > i {
 
 /* online games section start */
 .online-games-container{
+  margin: 20px 120px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 .online-games-content{
   text-align: center;
 
+}
+
+.animation:hover{
+  mask-image: url(/images/Frame.png);
 }
 
 .online-games-title{
@@ -171,11 +192,15 @@ margin-bottom: 5px;
   justify-content: space-around;
   align-items: center;
   gap: 250px;
+  margin: 20px 120px 20px;
   
 
 }
+
+
 .play-content{
   text-align: right;
+  
 }
 .play-title{
 font-family: Work Sans;
@@ -199,16 +224,82 @@ gap: 5px;
 }
 .icons-section{
 display: flex;
-gap: 10px;
+text-align: center;
+gap: 15px;
+
+margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.icons-text{
+  color: #0B0223;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
 
 .flex-icon:hover{
   border: 2px solid red;
   border-radius: 50px;
   color: red;
+  padding: 10px;
+}
+
+/* footer section start */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-section{
+  text-align: center;
+  background-color: rgba(11, 2, 35, 1);
+  padding: 10px;
+
+}
+.footer-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 
+.footer-content a{
+  color: white ;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.footer-sub-title{
+  color:white;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-icons{
+  color: firebrick;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.footer-a{
+  color: white;
+  margin: 10px;
+}
 
 
 
@@ -217,8 +308,11 @@ gap: 10px;
 /* Responsive section */
 /* Mobile view */
 @media screen and (max-width: 576px) {
-  body {
+  header , main {
     margin: 10px 100px 10px;
+  }
+  footer{
+    background-size: cover;
   }
   nav {
     flex-direction: column;
@@ -242,8 +336,17 @@ gap: 10px;
     flex-direction: column;
   }
 
+  .icons-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
   
-  
+  .icons-section{
+    flex-direction: column;
+    padding:30px;
+  }
+
+
 }
 
 
@@ -252,8 +355,12 @@ gap: 10px;
 
 /* Tablet view */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  body {
+  header,main {
     margin: 20px 100px 10px;
+
+  }
+  footer{
+    margin:0;
   }
 
   nav {
@@ -276,5 +383,10 @@ gap: 10px;
     flex-direction: column;
   }
   
+  .icons-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+  }
   
 }
