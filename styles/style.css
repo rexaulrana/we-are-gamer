@@ -164,9 +164,7 @@ button > i {
 
 }
 
-.animation:hover{
-  mask-image: url(/images/Frame.png);
-}
+
 
 .online-games-title{
   color: #0B0223;
@@ -257,7 +255,7 @@ line-height: normal;
 }
 .footer-section{
   text-align: center;
-  background-color: rgba(11, 2, 35, 1);
+  /* background-color: rgba(11, 2, 35, 1); */
   padding: 10px;
 
 }
@@ -270,7 +268,7 @@ line-height: normal;
 
 
 .footer-content a{
-  color: white ;
+  color: black ;
 text-align: center;
 font-family: Work Sans;
 font-size: 18px;
@@ -279,7 +277,7 @@ font-weight: 600;
 line-height: normal;
 }
 .footer-sub-title{
-  color:white;
+  color:black;
   font-family: Work Sans;
   font-size: 45px;
   font-style: normal;
@@ -297,7 +295,7 @@ line-height: normal;
   
 }
 .footer-a{
-  color: white;
+  color: red;
   margin: 10px;
 }
 
@@ -308,11 +306,14 @@ line-height: normal;
 /* Responsive section */
 /* Mobile view */
 @media screen and (max-width: 576px) {
-  header , main {
-    margin: 10px 100px 10px;
+  body{
+    margin: 20px 250px 20px;
   }
+  /* header , main {
+    margin: 10px 100px 10px;
+  } */
   footer{
-    background-size: cover;
+    /* background-size: cover; */
   }
   nav {
     flex-direction: column;
@@ -335,18 +336,37 @@ line-height: normal;
   .play-section{
     flex-direction: column;
   }
+  .overlay-img{
+  max-width: 500px;
+}
+.corner-img{
+  max-width: 300px;
 
-  .icons-section{
+
+  /* .icons-section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-  }
+  } */
   
   .icons-section{
     flex-direction: column;
+    flex-grow: calc(1);
+    flex-wrap: wrap;
     padding:30px;
   }
+.footer-section{
+  text-align: center;
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px;
+}
+.footer-a{
 
-
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 }
 
 
