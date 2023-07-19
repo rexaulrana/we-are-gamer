@@ -7,7 +7,7 @@
 
 /* shared styles */
 body {
-  /* margin: 20px 120px 20px; */
+  margin: 20px 120px 20px;
 
 }
 .pink-letter {
@@ -40,7 +40,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  margin: 20px 120px 20px;
+  /* margin: 20px 120px 20px; */
 }
 
 .nav-left {
@@ -103,7 +103,7 @@ button > i {
   align-items: center;
 
   margin-top: 20px;
-  margin: 20px 120px 20px;
+  /* margin: 20px 120px 20px; */
 }
 .banner-title {
   color: #0b0223;
@@ -154,7 +154,7 @@ button > i {
 
 /* online games section start */
 .online-games-container{
-  margin: 20px 120px 20px;
+  /* margin: 20px 120px 20px; */
   margin-top: 20px;
   margin-bottom: 20px;
   
@@ -190,7 +190,7 @@ margin-bottom: 5px;
   justify-content: space-around;
   align-items: center;
   gap: 250px;
-  margin: 20px 120px 20px;
+  /* margin: 20px 120px 20px; */
   
 
 }
@@ -221,8 +221,8 @@ gap: 5px;
 
 }
 .icons-section{
-display: flex;
-text-align: center;
+display: grid;
+grid-template-columns: repeat(6 ,1fr);
 gap: 15px;
 
 margin-top: 20px;
@@ -303,11 +303,22 @@ line-height: normal;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive section */
 /* Mobile view */
 @media screen and (max-width: 576px) {
   body{
-    margin: 20px 250px 20px;
+    margin: 20px 200px 20px;
   }
   /* header , main {
     margin: 10px 100px 10px;
@@ -349,9 +360,7 @@ line-height: normal;
   } */
   
   .icons-section{
-    flex-direction: column;
-    flex-grow: calc(1);
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3 ,1fr);
     padding:30px;
   }
 .footer-section{
