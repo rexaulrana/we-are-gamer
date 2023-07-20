@@ -170,7 +170,7 @@ button > i {
 }
 
 .image {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
@@ -178,7 +178,7 @@ button > i {
 .overlay {
   position: absolute;
   top: 0;
-  bottom:110px;
+  bottom:115px;
   left: 0;
   right: 0;
   height: auto;
@@ -215,10 +215,14 @@ text-align: center;
 }
 .online-games{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+  /* padding: 20px; */
+
 }
 
 
