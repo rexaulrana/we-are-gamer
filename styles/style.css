@@ -162,12 +162,7 @@ button > i {
   margin-bottom: 5px;
 }
 
-.rectangle-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
+
 .container {
   position: relative;
   width: 100%;
